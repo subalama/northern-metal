@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<title>University Website Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="khukuri.jpg"></a> 
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="video.html">VIDEO</a></li>
+            <li><a href="photo.html">PHOTO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>NORTHERN METAL</h1>
+     <p>Hi, My name is Samir and I'm here to enlighten you about the world of metal music.<br>
+        I don't own any of these music and its videos but as a fan I want everyone to listen<br>
+        to this stuff and so I'm promoting this here in my website. Well without further ado,<br>
+        let us dive into this.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Alter_Bridge" class="hero-btn" target="block">To Know More</a>
+    </div>
+</section>
+<!-----Javascript for Toggle Menu----->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
